@@ -121,7 +121,23 @@
       background-color: #2a5298;
       transform: scale(1.05);
     }
-    
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .social-icons a img {
+      width: 32px;
+      height: 32px;
+      filter: brightness(0) invert(1);
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .social-icons a:hover img {
+      transform: scale(1.2);
+      filter: brightness(1.5) drop-shadow(0 0 5px #fff);
+    }
+     
   </style>
 </head>
 <body>
@@ -149,7 +165,21 @@
    
 
   <footer>
-
+    <div style="text-align: center; margin: 40px 0;">
+      <h2>Connect with Me</h2>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/ayush_programmer/" target="_blank" aria-label="Instagram">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" />
+        </a>
+        <a href="https://github.com/itxayushshukla" target="_blank" aria-label="GitHub">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" />
+        </a>
+        <a href="https://x.com/itxayushshukla" target="_blank" aria-label="Twitter">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter" />
+        </a>
+      </div>
+    </div>
+    
     <p>© 2025 Ayush Shukla. All rights reserved.</p>
   </footer>
 </body>
