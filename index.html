@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Coding by CodingNepal - youtube.com/@codingnepal -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -680,10 +679,21 @@ header .navbar {
       </footer>
 <!-- ...existing code... -->
     <!-- Linking Swiper script -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Linking custom script -->
-    <script src="script.js">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    </script>
+<!-- Menu toggle script -->
+<script>
+  const menuOpenButton = document.getElementById("menu-open-button");
+  const menuCloseButton = document.getElementById("menu-close-button");
+
+  menuOpenButton.addEventListener("click", () => {
+    document.body.classList.add("show-mobile-menu");
+  });
+
+  menuCloseButton.addEventListener("click", () => {
+    document.body.classList.remove("show-mobile-menu");
+  });
+</script>
+
   </body>
 </html>
